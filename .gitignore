@@ -1,0 +1,28 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+
+# Vector database persistida localmente (caso se use persist_directory)
+chroma_db/
+.chroma/
+
+# Cache local de modelos (caso se defina HF_HOME dentro do projeto)
+.cache/
+models/
+
+# Editores e sistema operativo
+.vscode/
+.idea/
+.DS_Store

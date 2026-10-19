@@ -82,11 +82,11 @@ def prepare_qa_inputs(inputs):
 
 answer_chain = prompt | local_llm | StrOutputParser()
 qa_chain = RunnableLambda(prepare_qa_inputs) | RunnablePassthrough.assign(
-    result=answer_chain
+result=answer_chain
 )
 
 # Teste prático de pergunta em linguagem natural
-pergunta = "Quando posso marcar minhas férias?"
+pergunta = "Quantos dias de trabalho presencial são obrigatórios por semana?"
 print(f"\n--- Pergunta: {pergunta} ---")
 
 resposta = qa_chain.invoke({"question": pergunta})
