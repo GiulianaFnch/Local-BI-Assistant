@@ -1,0 +1,22 @@
+# Core Frameworks para RAG e Agentes
+
+langchain-core
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+
+
+
+# Processamento de Linguagem Natural e Machine Learning
+
+torch
+
+transformers
+
+sentence-transformers
+
+
+
+# Vector Database para armazenamento de Embeddings
+
+chromadb
